@@ -14,7 +14,6 @@ public class Main {
         if (pilihan == 1){
             System.out.print("Masukkan username: ");
             String username = scanner.nextLine();
-
             System.out.print("Masukkan password: ");
             String password = scanner.nextLine();
 
@@ -26,7 +25,6 @@ public class Main {
         }else if (pilihan == 2){
             System.out.print("Masukkan nama: ");
             String nama = scanner.nextLine();
-
             System.out.print("Masukkan NIM: ");
             String nim = scanner.nextLine();
 
