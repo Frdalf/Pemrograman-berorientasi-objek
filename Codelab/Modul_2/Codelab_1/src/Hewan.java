@@ -1,4 +1,5 @@
 public class Hewan {
+    //Variabel
     String nama;
     String jenis;
     String suara;
@@ -18,4 +19,3 @@ public class Hewan {
         System.out.println();
     }
 }
-

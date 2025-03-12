@@ -2,6 +2,7 @@ import java.text.NumberFormat;
 import java.util.Locale;
 
 public class RekeningBank {
+    //Variabel
     private String nomorrekening;
     private String namapemilik;
     private double saldo;
