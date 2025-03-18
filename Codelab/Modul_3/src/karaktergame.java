@@ -27,6 +27,6 @@ public class karaktergame {
 
     //method yang akan di override subclass
     public void serang (karaktergame target) {
-        System.out.println(nama + "menyerang" + target.getNama() + "!");
+        System.out.println(nama + " menyerang " + target.getNama() + "!");
     }
 }

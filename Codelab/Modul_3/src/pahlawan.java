@@ -3,7 +3,7 @@ public class pahlawan extends karaktergame {
         super(nama, kesehatan);
     }
 
-    @Override
+    //Override
     public void serang (karaktergame target) {
         System.out.println(getNama() + " menyerang " + target.getNama() + " menggunakan orbital strike!");
         target.setKesehatan(target.getKesehatan() - 20);
