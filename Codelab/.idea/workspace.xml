@@ -1,20 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a4b5c0d4-ee77-48b2-a035-f0d7f69b7f6a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Modul_2/src/Hewan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modul_4/src/app/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modul_4/src/perpustakaan/Anggota.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modul_4/src/perpustakaan/Buku.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modul_4/src/perpustakaan/Fiksi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modul_4/src/perpustakaan/NonFiksi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modul_4/src/perpustakaan/Peminjaman.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tugas/Tugas_PBO/Tugas_1/src/com/praktikum/users/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tugas/Tugas_PBO/Tugas_1/src/com/praktikum/users/Mahasiswa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tugas/Tugas_PBO/Tugas_1/src/com/praktikum/users/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2u58c7h2KOVjidEhqx812ExvN17" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -22,25 +41,42 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/1. Kuliah/Semester 2/PBO_B_Farid Al Farizi_017/Codelab/Modul_2"
+    "last_opened_file_path": "D:/1. Kuliah/Semester 2/PBO_B_Farid Al Farizi_017/Tugas/Tugas_PBO/Tugas_1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Codelab" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Codelab" />
-      <option name="filePath" />
-      <method v="2" />
-    </configuration>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\1. Kuliah\Semester 2\PBO_B_Farid Al Farizi_017\Codelab\untitled1\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\1. Kuliah\Semester 2\PBO_B_Farid Al Farizi_017\Codelab\Modul_4" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="app" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.25659.59" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.25659.59" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -50,7 +86,31 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1741527150589</updated>
+      <workItem from="1745804756734" duration="86000" />
+      <workItem from="1745804851676" duration="42000" />
+      <workItem from="1745804913092" duration="1828000" />
+      <workItem from="1745806785760" duration="1086000" />
+      <workItem from="1745807907392" duration="475000" />
+      <workItem from="1745808408231" duration="1225000" />
+      <workItem from="1745809676983" duration="805000" />
+      <workItem from="1745820045482" duration="36000" />
+      <workItem from="1746364338981" duration="77000" />
+      <workItem from="1746364438274" duration="757000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Modul_3/out/production/Modul_3/karaktergame.class</url>
+          <line>27</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
