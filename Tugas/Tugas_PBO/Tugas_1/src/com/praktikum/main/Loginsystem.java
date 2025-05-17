@@ -10,7 +10,7 @@ public class Loginsystem {
         Scanner scanner = new Scanner(System.in);
 
         Admin admin = new Admin("Admin017", "Password017");
-        Mahasiswa mhs = new Mahasiswa("Farid Al Farizi", "202410370110017");
+        Mahasiswa mahasiswa = new Mahasiswa("Farid Al Farizi", "202410370110017");
 
         System.out.println("Pilihan Login:");
         System.out.println("1. Login Admin");
@@ -38,8 +38,8 @@ public class Loginsystem {
             System.out.print("NIM: ");
             String nim = scanner.nextLine();
 
-            if (mhs.login(nama, nim)) {
-                user = mhs;
+            if (mahasiswa.login(nama, nim)) {
+                user = mahasiswa;
             } else {
                 System.out.println("Login gagal. Nama/NIM salah.");
             }
