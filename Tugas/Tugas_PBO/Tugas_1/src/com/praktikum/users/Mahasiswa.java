@@ -1,62 +1,85 @@
 package com.praktikum.users;
 
 import com.praktikum.actions.MahasiswaActions;
+import com.praktikum.data.Item;
+import com.praktikum.main.LoginSystem;
+
 import java.util.Scanner;
 
 public class Mahasiswa extends User implements MahasiswaActions {
+    private String nama;
+    private String nim;
+    private static Scanner scanner = new Scanner(System.in);
+
     public Mahasiswa(String nama, String nim) {
         super(nama, nim);
+        this.nama = nama;
+        this.nim = nim;
     }
 
     @Override
-    public boolean login(String input1, String input2) {
-        return nama.equals(input1) && nim.equals(input2);
-    }
-
-    @Override
-    public void reportItem() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Nama Barang: ");
-        String namaBarang = scanner.nextLine();
-        System.out.print("Deskripsi Barang: ");
-        String deskripsi = scanner.nextLine();
-        System.out.print("Lokasi Ditemukan: ");
-        String lokasi = scanner.nextLine();
-
-        System.out.println("\nBarang berhasil dilaporkan!");
-        System.out.println("Detail:");
-        System.out.println("Nama: " + namaBarang);
-        System.out.println("Deskripsi: " + deskripsi);
-        System.out.println("Lokasi: " + lokasi);
-    }
-
-    @Override
-    public void viewReportedItems() {
-        System.out.println(">> Fitur Lihat Laporan Belum Tersedia <<");
+    public boolean login(String inputNama, String inputNim) {
+        return this.nama.equals(inputNama) && this.nim.equals(inputNim);
     }
 
     @Override
     public void displayAppMenu() {
-        Scanner scanner = new Scanner(System.in);
-        int pilihan;
-        do {
-            System.out.println("\n--- Menu Mahasiswa ---");
-            System.out.println("1. Laporkan Barang Temuan/Hilang");
-            System.out.println("2. Lihat Daftar Laporan");
+        int pilih = -1;
+        while (pilih != 0) {
+            System.out.println("\n=== MENU MAHASISWA ===");
+            System.out.println("1. Laporkan Barang");
+            System.out.println("2. Lihat Barang yang Dilaporkan");
             System.out.println("0. Logout");
             System.out.print("Pilih menu: ");
-            pilihan = scanner.nextInt();
-            scanner.nextLine();
+            try {
+                pilih = Integer.parseInt(scanner.nextLine());
+            } catch (NumberFormatException e) {
+                System.out.println("Input harus berupa angka!");
+                continue;
+            }
 
-            if (pilihan == 1) {
+            if (pilih == 1) {
                 reportItem();
-            } else if (pilihan == 2) {
+            } else if (pilih == 2) {
                 viewReportedItems();
-            } else if (pilihan == 0) {
-                System.out.println("Logout berhasil.");
+            } else if (pilih == 0) {
+                System.out.println("Logout...");
             } else {
                 System.out.println("Pilihan tidak valid.");
             }
-        } while (pilihan != 0);
+        }
+    }
+
+    @Override
+    public void reportItem() {
+        System.out.print("Masukkan nama barang: ");
+        String name = scanner.nextLine();
+        System.out.print("Masukkan deskripsi barang: ");
+        String desc = scanner.nextLine();
+        System.out.print("Masukkan lokasi ditemukan: ");
+        String location = scanner.nextLine();
+
+        Item item = new Item(name, desc, location, "Reported");
+        LoginSystem.reportedItems.add(item);
+        System.out.println("Barang berhasil dilaporkan!");
+    }
+
+    @Override
+    public void viewReportedItems() {
+        if (LoginSystem.reportedItems.isEmpty()) {
+            System.out.println("Belum ada laporan barang.");
+            return;
+        }
+
+        System.out.println("=== Daftar Barang Dilaporkan ===");
+        for (Item item : LoginSystem.reportedItems) {
+            if (item.getStatus().equals("Reported")) {
+                System.out.println("- " + item.getItemName() + " | " + item.getDescription() + " | " + item.getLocation());
+            }
+        }
+    }
+
+    public Object getNim() {
+        return this.nim;
     }
 }

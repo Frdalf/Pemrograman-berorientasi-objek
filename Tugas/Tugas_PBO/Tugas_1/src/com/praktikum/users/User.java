@@ -2,19 +2,19 @@ package com.praktikum.users;
 
 public abstract class User {
     protected String nama;
-    protected String nim;
+    protected String id; // bisa NIM untuk Mahasiswa, atau username untuk Admin
 
-    public User(String nama, String nim) {
+    public User(String nama, String id) {
         this.nama = nama;
-        this.nim = nim;
+        this.id = id;
     }
 
     public String getNama() {
         return nama;
     }
 
-    public String getNim() {
-        return nim;
+    public String getId() {
+        return id;
     }
 
     public abstract boolean login(String input1, String input2);
